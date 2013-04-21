@@ -1,0 +1,65 @@
+■ 接続
+#<Redis client v3.0.3 for redis://localhost:6379/0>
+
+■ 単純なKey Valueの例
+"OK"
+"OK"
+"toyota"
+"subaru"
+
+■ インクリメントの例
+1をセット
+"OK"
+"1"
+インクリメント
+2
+"2"
+10を加算
+12
+"12"
+
+■ Listの例
+右から順番に3個追加する。
+1
+2
+3
+左の先頭から3個表示する。
+["toyota", "subaru", "mitsubishi motors"]
+左から数えて2番目から2個表示する。
+["subaru", "mitsubishi motors"]
+左から1個追加する。
+4
+左の先頭から3個表示する。
+["mazda", "toyota", "subaru"]
+
+■ Setsの例
+値をセット
+true
+true
+true
+中身は？
+["elite", "esprit", "elan"]
+
+■ Sorted setsの例
+値をセット
+true
+true
+true
+中身は？
+["mazda", "toyota", "subaru"]
+降順で表示
+["subaru", "toyota", "mazda"]
+
+■ JSONの例
+値をセット
+"OK"
+中身は？
+{"id"=>1, "name"=>"watashi", "time"=>"2013-04-21 19:21:09 +0900", "body"=>"jsontest"}
+
+■ 全キーの削除
+"OK"
+
+■ 切断
+"OK"
+
+nil
